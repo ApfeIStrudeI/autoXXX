@@ -1,0 +1,246 @@
+$mainColor: #000
+$thirdColor: #fff
+@mixin forModBG 
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 5
+    display: block
+    width: 100%
+    height: 100%
+    overflow: hidden
+    transition: 0.5s all
+body
+    background: url(../img/162.jpg) center center/cover no-repeat
+    height: 100vh
+.modal-main-wrapper
+    height: 90vh
+    position: relative
+.modal 
+    @include forModBG
+    .check 
+        width: 100%
+        margin: 5px 0
+        .customCheck 
+            font-weight: 400
+            width: 100%
+            font-size: 15px
+            justify-content: flex-start
+            div, span, a 
+                margin-right: 9px
+    &__dialog 
+        max-width: 815px
+        margin: 100px auto
+    &__content 
+        position: relative
+        height: fit-content
+        padding: 40px
+        border-radius: 5px
+        width: 815px
+        border: 1px solid #000
+        background-color: rgba(255, 255, 255, 0.61)
+        backdrop-filter: blur(5px)
+    &__close 
+        position: absolute
+        top: 10px
+        right: 20px
+        font-size: 30px
+        background-color: transparent
+        cursor: pointer
+        width: 20px
+        img 
+            width: 100%
+    &__title 
+        font-weight: 800
+        font-size: 40px
+        color: $mainColor
+        text-align: center
+        margin-bottom: 27px
+        width: 422px
+    &__inputWrapper 
+        display: flex
+        justify-content: center
+        width: 100%
+    &__formContainer form 
+        display: flex
+        flex-direction: column
+        align-items: center
+        .footer__social 
+            margin-top: 10px
+            width: 40%
+    &__input 
+        display: block
+        margin: 7px 0
+        border-radius: 10px
+        width: 100%
+        height: 67px
+        padding: 0 25px
+        outline: none
+        background: #ffffff
+        font-weight: 400
+        font-size: 17px
+        color: $mainColor
+    .btn 
+        margin-top: 8px
+        margin-bottom: 8px
+        border-radius: 10px
+        width: 100%
+        height: 55px
+        background: $thirdColor
+        font-weight: 600
+        font-size: 17px
+        &_dark 
+            background: $thirdColor
+            color: #3a3c41
+            cursor: pointer
+        &_yellow 
+            font-weight: 400
+            background: #496fd8
+            color: $thirdColor
+            cursor: pointer
+@media (max-width: 1690px) 
+    .modal
+        &__dialog
+            max-width: 500px
+            margin: 55px auto
+        &__content
+            width: 500px
+            padding: 20px
+        &__close 
+            font-size: 20px
+            width: 15px
+            top: 18px
+        &__title 
+            font-size: 35px
+            margin-bottom: 20px
+            width: 350px
+        &__input 
+            margin: 5px 0
+            height: 55px
+            font-size: 16px
+        .btn
+            margin-top: 5px
+            margin-bottom: 5px
+    .search
+        &__container
+            max-width: 600px
+            margin: 55px auto
+        &__close 
+            top: 75px
+            right: 25vw
+            font-size: 20px
+        &__window
+            height: 60px
+        &__yellowIcon 
+            width: 45px
+            height: 42px
+@media (max-width: 1350px)
+    .search
+        &__close 
+            right: 15vw
+@media (max-width: 999px) 
+    .modal
+        &__dialog
+            max-width: 400px
+            margin: 60px auto
+        &__content
+            width: 400px
+        &__close 
+            font-size: 18px
+            width: 14px
+            top: 17px
+        &__title 
+            font-size: 30px
+            margin-bottom: 10px
+        &__input 
+            height: 50px
+            font-size: 14px
+        .btn
+            font-size: 14px
+        .check 
+            width: 95%
+            margin: 15px 0
+            .customCheck 
+                font-weight: 400
+                width: 100%
+                font-size: 13.5px
+                flex-wrap: wrap   
+                a
+                    margin-left: 16px
+                span
+                    margin-right: 130px
+    .search
+        &__close 
+            top: 70px
+            right: 7vw 
+            font-size: 18px
+            width: 14px
+        &__window
+            height: 50px
+        &__yellowIcon 
+            width: 45px
+            height: 42px
+        &__input
+            font-size: 18px
+        &__varList
+            height: 85vh
+        &__yellowIcon 
+            width: 35px
+            height: 32px
+            img
+                width: 40%
+        &__item
+            margin-bottom: 8px
+            max-height: 165px
+            height: 165px
+            min-height: 165px
+            .mark 
+                width: 50px
+                height: 25px
+                font-size: 14px
+            .position__nameRus
+                font-size: 18px
+@media (max-width: 767px)
+    .search
+        &__close 
+            top: 25px
+            right: 6vw
+        &__window
+            width: 95%
+            margin: 0 auto
+        &__varList
+            width: 95%
+            margin: 20px auto
+            &::-webkit-scrollbar
+                width: 0
+            &::-moz-scrollbar
+                width: 0
+@media (max-width: 424px) 
+    .modal
+        &__dialog
+            max-width: 95%
+        &__content
+            width: 100%
+        &__title 
+            font-size: 25px
+            width: 300px
+        &__input 
+            height: 45px
+            font-size: 14px
+        .btn
+            height: 50px
+            font-size: 14px
+        .check 
+            .customCheck 
+                font-weight: 400
+                width: 100%
+                font-size: 12px
+                flex-wrap: wrap   
+                a
+                    margin-left: 25px  
+                    margin-top: -5px
+                span
+                    width: 80%
+                    text-align: left
+                div
+                    margin-top: 5px

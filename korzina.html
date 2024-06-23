@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="BODYYY">
+    <div class="BODY_wrapper wrpscrl">
+        <header>
+            <div class="container">
+                <a class="header_logo" href="index.html">
+                    <img class="logo" src="img/logo.svg" alt="Logo">
+                </a>
+                <nav class="menu">
+                    <div class="tit-wrp">
+                        <a class="navigation" href="catalog.html">Каталог</a>
+                    </div>
+                    <div class="tit-wrp">
+                        <a class="navigation" href="korzina.html">Корзина</a>
+                    </div>
+                    <div class="tit-wrp">
+                        <a class="navigation" href="login.html">Вход и регистрация</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="special-container MAIN">
+            <div class="korzina-wrap">
+                <div class="flex123">
+                    <div class="tit-wrp MH">
+                        <h3 style="text-align: center;">Добавляйте товары в корзину и оформляйте заказ</h3>
+                    </div>
+                    <button id="getBUY">
+                        <span>
+                            ОФОРМИТЬ ЗАКАЗ
+                        </span>
+                    </button>
+                </div>
+                <div class="kor-wrp">
+                    пока здесь пусто... 
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer_container">
+                    <div class="footer_icons">
+                    <img src="icons/vk.svg" alt="vk">
+                    <img src="icons/facebook.svg" alt="facebook">
+                    <img src="icons/tg.svg" alt="telegram">
+                    </div>
+                </div>
+                 <div class="footer_text_container">
+                    <p> © AutoX 2024 </p>
+                </div>   
+                </div> 
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('#getBUY').addEventListener('click', () => {
+            alert('Пожалуйста, добавьте товар в корзину');
+        });
+    </script>
+</body>
+</html>
