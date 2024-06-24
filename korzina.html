@@ -13,7 +13,8 @@
                 <a class="header_logo" href="index.html">
                     <img class="logo" src="img/logo.svg" alt="Logo">
                 </a>
-                <nav class="menu">
+                <img class="burger-menu mobile" src="icons/menu.svg">
+                <nav class="menu desctop">
                     <div class="tit-wrp">
                         <a class="navigation" href="catalog.html">Каталог</a>
                     </div>
@@ -26,6 +27,11 @@
                 </nav>
             </div>
         </header>
+        <div class="mob-menu mobile">
+            <a class="navigation" href="catalog.html">Каталог</a>
+            <a class="navigation" href="korzina.html">Корзина</a>
+            <a class="navigation" href="login.html">Вход и регистрация</a>
+        </div>
         <div class="special-container MAIN">
             <div class="korzina-wrap">
                 <div class="flex123">
@@ -52,9 +58,8 @@
                     <img src="icons/tg.svg" alt="telegram">
                     </div>
                 </div>
-                 <div class="footer_text_container">
+                <div class="footer_text_container">
                     <p> © AutoX 2024 </p>
-                </div>   
                 </div> 
             </div>
         </footer>
@@ -64,5 +69,6 @@
             alert('Пожалуйста, добавьте товар в корзину');
         });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

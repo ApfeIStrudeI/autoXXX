@@ -1,6 +1,6 @@
 $mainColor: #000
 $thirdColor: #fff
-@mixin forModBG 
+@mixin forModBG
     position: absolute
     top: 0
     left: 0
@@ -10,14 +10,20 @@ $thirdColor: #fff
     height: 100%
     overflow: hidden
     transition: 0.5s all
+html
+    height: 100%
 body
     background: url(../img/162.jpg) center center/cover no-repeat
-    height: 100vh
+    height: 100%
+.loginWrapper
+    display: flex
+    min-height: 100%
+    flex-direction: column
 .modal-main-wrapper
-    height: 90vh
+    flex: 1 1 auto
     position: relative
 .modal 
-    @include forModBG
+    height: fit-content
     .check 
         width: 100%
         margin: 5px 0
@@ -95,7 +101,7 @@ body
             cursor: pointer
         &_yellow 
             font-weight: 400
-            background: #496fd8
+            background: #b10000
             color: $thirdColor
             cursor: pointer
 @media (max-width: 1690px) 
@@ -139,6 +145,10 @@ body
         &__close 
             right: 15vw
 @media (max-width: 999px) 
+    body
+        background: #000
+    .loginWrapper
+        background: url(../img/153.jpg) center center/cover no-repeat
     .modal
         &__dialog
             max-width: 400px

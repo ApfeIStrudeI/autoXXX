@@ -2,13 +2,14 @@
     border-radius: 5px
     background: #fff
 .card
-    background: #496fd8
+    background-color: rgba(0, 0, 0, 0.6)
+    border: 1px solid #000
     padding: 10px
     border-radius: 5px
 .card__text
-    color: #dadadad8 
+    color: #ffffffd8 
 .BODY_wrapper
-    background: #496fd82c
+    background: #e0e0e0
 .ReviewFilterTabs 
     margin-top: 20px
     height: fit-content
@@ -25,13 +26,13 @@
         padding: 10px
         border-radius: 5px
         height: 100%
-        background: #496fd87c
+        background: #ff0909
         width: 100%
         display: flex
         justify-content: center
         align-items: center
         &_active
-            background: #496fd8
+            background: #b10000
 .tradeCard 
     margin: 20px 0
     width: 100%
@@ -50,7 +51,7 @@
         min-width: 500px
         border-radius: 5px
         border: 1px solid #000
-        background-color: rgba(157, 177, 214, 0.61)
+        background-color: rgba(255, 255, 255, 0.61)
         margin-right: 20px
     &__title
         text-align: center
@@ -72,12 +73,12 @@
             height: 100%
             padding: 10px
             border-radius: 5px
-            background: #496fd87c
+            background: #ff0909
             color: #fff 
             cursor: pointer
             transition: 0.3s all
             &:hover
-                background: #496fd8
+                background: #b10000
                 transition: 0.3s all
 @media (max-width: 1260px)
     .tradeCard 
@@ -95,8 +96,10 @@
             gap: 18px
 @media (max-width: 999px)
     .tradeCard 
+        padding: 20px
         img
             min-width: 100%
+            width: 100%
         &__title
             font-size: 18px
         .Vendor
